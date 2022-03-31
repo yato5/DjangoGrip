@@ -4,4 +4,4 @@ from datetime import datetime
 
 
 def index(request):    
-    return render(request, 'index.html', context={'name': 'Yanis', 'age': '19', 'date': datetime.now()})
+    return render(request, 'DjangoGrip/index.html', context={'name': 'Yanis', 'age': '19', 'date': datetime.now()})

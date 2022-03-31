@@ -14,14 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
-from django.views.defaults import server_error
+from django.urls import include, path
 from DjangoGrip.views import index
 
+from accueil.views import index as accueil_index
+
+from django.views.defaults import server_error
+
+
 urlpatterns = [
+    path('',index, name="index"),
     path('admin/', admin.site.urls),
+    path('home/', include("accueil.urls")),
     # test vu server error
     path('505/', server_error),
-    path('',index, name="index"),
 ]
+

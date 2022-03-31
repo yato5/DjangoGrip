@@ -1,11 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">    
     <head>
         <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css' href='{% static "css/style.css" %}'>
         <title>DjangoGrip</title>
     </head>
     <body>
         <h1>{{name}}, {{age}} ans vous souhaite la bienvenue sur le site</h1>
-        <h2>Nous sommes le {{date | date:'d F Y H:m:s'}}</h2>
+        <h2>Nous sommes le {{date | date:'d F Y H:i:s'}}</h2>
     </body>
 </html>
