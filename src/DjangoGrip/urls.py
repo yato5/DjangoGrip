@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from django.views.defaults import server_error
+from DjangoGrip.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # test vu server error
     path('505/', server_error),
+    path('',index, name="index"),
 ]
