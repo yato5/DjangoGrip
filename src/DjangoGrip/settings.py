@@ -120,6 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIR = [
-    os.path.join(BASE_DIR, 'DjangoGrip/static'),
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'DjangoGrip/static')
 ]

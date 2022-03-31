@@ -7,7 +7,11 @@
         <title>DjangoGrip</title>
     </head>
     <body>
-        <h1>{{name}}, {{age}} ans vous souhaite la bienvenue sur le site</h1>
-        <h2>Nous sommes le {{date | date:'d F Y H:i:s'}}</h2>
+        <div class="container">
+            <h1>Bienvenue sur mon site pour prendre en main de Django</h1>
+            <h2>Aujourd'hui nous sommes le {{date | date:'d F Y'}}</h2>
+            <h3>Vous avez accédé au site à {{date | date:'H\hi'}}</h3>
+            <h4>{{name}}, {{age}} ans</h4>
+        </div>
     </body>
 </html>
