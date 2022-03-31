@@ -10,6 +10,7 @@
  
 ## What I've learned
 
+- Installer Django et comprendre son fonctionnement basique (commandes de base, messages d'erreurs...)
 - Configurer routes (urls)
 - Vues (avec paramètres) et templates
 - Application et lien avec la base (Routes dans un fichier séparé, plusieurs routes, gestion route inconnues)
